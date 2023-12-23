@@ -1,0 +1,22 @@
+digraph test_graph_compresse {
+ID3b22cdd0 [label="x3(x2(x1(false)(true))(x1(true)(false)))(x2(x1(false)(true))(x1(false)(false)))"];
+ID1e81f4dc [label="x2(x1(false)(true))(x1(true)(false))"];
+ID4d591d15 [label="x2(x1(false)(true))(x1(false)(false))"];
+ID65ae6ba4 [label="x1(false)(true)"];
+ID48cf768c [label="x1(true)(false)"];
+ID59f95c5d [label="false"];
+ID5ccd43c2 [label="true"];
+ID4aa8f0b4 [label="x1(false)(false)"];
+ID3b22cdd0 -> ID1e81f4dc[style=dashed];
+ID3b22cdd0 -> ID4d591d15;
+ID1e81f4dc -> ID65ae6ba4[style=dashed];
+ID1e81f4dc -> ID48cf768c;
+ID4d591d15 -> ID65ae6ba4[style=dashed];
+ID4d591d15 -> ID4aa8f0b4;
+ID65ae6ba4 -> ID59f95c5d[style=dashed];
+ID65ae6ba4 -> ID5ccd43c2;
+ID48cf768c -> ID5ccd43c2[style=dashed];
+ID48cf768c -> ID59f95c5d;
+ID4aa8f0b4 -> ID59f95c5d[style=dashed];
+ID4aa8f0b4 -> ID59f95c5d;
+}

@@ -1,0 +1,31 @@
+digraph test_graph_non_compresse {
+ID39ed3c8d [label="x3(x2(x1(false)(true))(x1(true)(false)))(x2(x1(false)(true))(x1(false)(false)))"];
+ID2d363fb3 [label="x2(x1(false)(true))(x1(true)(false))"];
+ID5aaa6d82 [label="x2(x1(false)(true))(x1(false)(false))"];
+ID73a28541 [label="x1(false)(true)"];
+ID6f75e721 [label="x1(true)(false)"];
+ID69222c14 [label="false"];
+ID606d8acf [label="true"];
+ID782830e [label="true"];
+ID470e2030 [label="false"];
+ID3fb4f649 [label="x1(false)(true)"];
+ID33833882 [label="x1(false)(false)"];
+ID200a570f [label="false"];
+ID16b3fc9e [label="true"];
+IDe2d56bf [label="false"];
+ID244038d0 [label="false"];
+ID39ed3c8d -> ID2d363fb3[style=dashed];
+ID39ed3c8d -> ID5aaa6d82;
+ID2d363fb3 -> ID73a28541[style=dashed];
+ID2d363fb3 -> ID6f75e721;
+ID5aaa6d82 -> ID3fb4f649[style=dashed];
+ID5aaa6d82 -> ID33833882;
+ID73a28541 -> ID69222c14[style=dashed];
+ID73a28541 -> ID606d8acf;
+ID6f75e721 -> ID782830e[style=dashed];
+ID6f75e721 -> ID470e2030;
+ID3fb4f649 -> ID200a570f[style=dashed];
+ID3fb4f649 -> ID16b3fc9e;
+ID33833882 -> IDe2d56bf[style=dashed];
+ID33833882 -> ID244038d0;
+}

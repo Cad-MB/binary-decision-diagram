@@ -1,0 +1,9 @@
+Java permet la manipulation de nombres de taille arbitraire, donc il y à possibilité d'aller au-delà des limites des types numériques primitifs, sans perte de précision (ou bien une perte contrôlé).
+
+Le paquet "java.math" contient deux classes pour représenter deux types de nombres de taille arbitraire :
+La classe BigInteger : représente un nombre entier de taille arbitraire,
+La classe BigDecimal : représente un nombre réel de taille arbitraire.
+
+Malgré cela des contraintes système sont toujours présents :
+-Contrainte d'espace : même si avec les machines modernes la limite de nombre de chiffres stockable peut sembler haute, il ne faut pas oublier de multiplier par le nombre d'instances utilisées à un instant donné pour se rendre compte de la quantité de mémoire utilisée.
+-Contrainte de temps : surtout dans le cas de nombres à très grande précision. Pour l'addition ou la soustraction, ils s'effectuent de manière linaire; mais pour la multiplication, la division, le calcul de racine ou de puissance, ont aura besoin de confronter chaque chiffre à chacun des autres. Le temps de calcul est alors quadratique ou exponentiel.

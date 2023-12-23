@@ -1,0 +1,19 @@
+digraph test_graph_bdd {
+ID5e265ba4 [label="x3(x2(x1(false)(true))(x1(true)(false)))(x2(x1(false)(true))(false))"];
+ID7de26db8 [label="x2(x1(false)(true))(x1(true)(false))"];
+ID36aa7bc2 [label="x2(x1(false)(true))(false)"];
+ID76ccd017 [label="x1(false)(true)"];
+ID182decdb [label="x1(true)(false)"];
+ID26f0a63f [label="false"];
+ID4361bd48 [label="true"];
+ID5e265ba4 -> ID7de26db8[style=dashed];
+ID5e265ba4 -> ID36aa7bc2;
+ID7de26db8 -> ID76ccd017[style=dashed];
+ID7de26db8 -> ID182decdb;
+ID36aa7bc2 -> ID76ccd017[style=dashed];
+ID36aa7bc2 -> ID26f0a63f;
+ID76ccd017 -> ID26f0a63f[style=dashed];
+ID76ccd017 -> ID4361bd48;
+ID182decdb -> ID4361bd48[style=dashed];
+ID182decdb -> ID26f0a63f;
+}
